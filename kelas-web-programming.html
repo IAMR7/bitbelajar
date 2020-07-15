@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Dashboard</title>
+
+  <link href="assets-cd/img/icon-bisait.png" rel="icon">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets-cd/modules/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets-cd/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets-cd/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets-cd/modules/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets-cd/modules/owlcarousel2/dist/assets-cd/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets-cd/modules/owlcarousel2/dist/assets-cd/owl.theme.default.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets-cd/css/style.css">
+  <link rel="stylesheet" href="assets-cd/css/custom.css">
+  <link rel="stylesheet" href="assets-cd/css/components.css">
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA --></head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar gradient"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Cari yang kamu butuhkan ..." aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle">
+            <a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle">
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+          <li class="dropdown dropdown-list-toggle">
+            <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg">
+              <i class="far fa-bell"></i>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image" src="assets/img/testimonials/testi1.jpg" class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Hi, Sumanto</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profil Saya
+              </a>
+              <a href="features-activities.html" class="dropdown-item has-icon">
+                <i class="fas fa-bolt"></i> Poin Aktivitas
+              </a>
+              <a href="features-settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Pengaturan
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="login.html" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"><img src="assets-cd/img/icon-bisait.png" width="25px"> BIT BELAJAR</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">CDO</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="dashboard-utama.html" class="nav-link"><i class="fas fa-home"></i><span>Beranda Utama</span></a>
+            </li>
+            <li class="menu-header">Menu</li>
+            <li>
+              <a href="" class="nav-link">
+                <i class="fas fa-university"></i>
+                <span>Akademi</span>
+              </a>
+            </li>
+            <li class="active">
+              <a class="nav-link" href="list-kelas.html">
+                <i class="fas fa-code"></i>
+                <span>List Kelas</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-route"></i>
+                <span>Peta Jalur Belajar</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-user-graduate"></i>
+                <span>Testimoni Member</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Penawaran Harga</span>
+              </a>
+            </li>
+            <li class="menu-header">Portal Menu</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-rocket"></i> <span>Beranda Pembelajaran</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="">Progress</a></li>
+                <li><a class="nav-link" href="">Kelas</a></li>
+                <li><a class="nav-link" href="">Project</a></li>
+                <li><a class="nav-link" href="">Ujian dan Tugas Praktik</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+            <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
+              <i class="fas fa-fire"></i> Mulai Belajar !
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <div class="section">
+          <div class="section-header">
+            <h1>Kelas Pemrograman Web</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="#">List Kelas</a></div>
+              <div class="breadcrumb-item"><a href="#">Kelas Pemrograman Web</a></div>
+            </div>
+          </div>
+        </div>
+        <section class="section-body">
+          <div class="row">
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <article class="article">
+                <div class="article-header">
+                  <div class="article-image" data-background="assets-cd/img/news/web-dasar.png">
+                  </div>
+                  <div class="article-title">
+                    <h2><a href="#">1. Belajar Dasar HTML</a></h2>
+                  </div>
+                </div>
+                <div class="article-details">
+                  <p>
+                    Belajar dasar dasar pemrograman web dengan teknik dasar struktur HTML
+                  </p>
+                  <div class="article-cta">
+                    <a href="modul-web-dasar.html" class="btn btn-primary">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <article class="article">
+                <div class="article-header">
+                  <div class="article-image" data-background="assets-cd/img/news/web-dasar-css.png">
+                  </div>
+                  <div class="article-title">
+                    <h2><a href="#">2. Belajar Dasar CSS</a></h2>
+                  </div>
+                </div>
+                <div class="article-details">
+                  <p>
+                    Belajar dasar dasar pemrograman web dengan teknik dasar styling CSS
+                  </p>
+                  <div class="article-cta">
+                    <a href="modul-web-dasar.html" class="btn btn-primary">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+              <article class="article">
+                <div class="article-header">
+                  <div class="article-image" data-background="assets-cd/img/news/web-dasar-js.png">
+                  </div>
+                  <div class="article-title">
+                    <h2><a href="#">3. Belajar Dasar Javascript</a></h2>
+                  </div>
+                </div>
+                <div class="article-details">
+                  <p>
+                    Belajar dasar dasar pemrograman web dengan dasar pemrograman Javascript
+                  </p>
+                  <div class="article-cta">
+                    <a href="modul-web-dasar.html" class="btn btn-primary">Lihat Selengkapnya</a>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>         
+        </section>
+      </div>
+
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; BIT BELAJAR 2020 <div class="bullet"></div> Support By <a href="">BIT BELAJAR Team</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets-cd/modules/jquery.min.js"></script>
+  <script src="assets-cd/modules/popper.js"></script>
+  <script src="assets-cd/modules/tooltip.js"></script>
+  <script src="assets-cd/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets-cd/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets-cd/modules/moment.min.js"></script>
+  <script src="assets-cd/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="assets-cd/modules/jquery.sparkline.min.js"></script>
+  <script src="assets-cd/modules/chart.min.js"></script>
+  <script src="assets-cd/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+  <script src="assets-cd/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets-cd/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets-cd/js/page/index.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="assets-cd/js/scripts.js"></script>
+  <script src="assets-cd/js/custom.js"></script>
+</body>
+</html>

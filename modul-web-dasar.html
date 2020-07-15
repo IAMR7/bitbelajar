@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
+  <title>Dashboard</title>
+
+  <link href="assets-cd/img/icon-bisait.png" rel="icon">
+
+  <!-- General CSS Files -->
+  <link rel="stylesheet" href="assets-cd/modules/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="assets-cd/modules/fontawesome/css/all.min.css">
+
+  <!-- CSS Libraries -->
+  <link rel="stylesheet" href="assets-cd/modules/jqvmap/dist/jqvmap.min.css">
+  <link rel="stylesheet" href="assets-cd/modules/summernote/summernote-bs4.css">
+  <link rel="stylesheet" href="assets-cd/modules/owlcarousel2/dist/assets-cd/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets-cd/modules/owlcarousel2/dist/assets-cd/owl.theme.default.min.css">
+
+  <!-- Template CSS -->
+  <link rel="stylesheet" href="assets-cd/css/style.css">
+  <link rel="stylesheet" href="assets-cd/css/custom.css">
+  <link rel="stylesheet" href="assets-cd/css/components.css">
+<!-- Start GA -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-94034622-3"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-94034622-3');
+</script>
+<!-- /END GA --></head>
+
+<body>
+  <div id="app">
+    <div class="main-wrapper main-wrapper-1">
+      <div class="navbar gradient"></div>
+      <nav class="navbar navbar-expand-lg main-navbar">
+        <form class="form-inline mr-auto">
+          <ul class="navbar-nav mr-3">
+            <li><a href="#" data-toggle="sidebar" class="nav-link nav-link-lg"><i class="fas fa-bars"></i></a></li>
+            <li><a href="#" data-toggle="search" class="nav-link nav-link-lg d-sm-none"><i class="fas fa-search"></i></a></li>
+          </ul>
+          <div class="search-element">
+            <input class="form-control" type="search" placeholder="Cari yang kamu butuhkan ..." aria-label="Search" data-width="250">
+            <button class="btn" type="submit"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+        <ul class="navbar-nav navbar-right">
+          <li class="dropdown dropdown-list-toggle">
+            <a href="#" data-toggle="dropdown" class="nav-link nav-link-lg message-toggle">
+              <i class="far fa-envelope"></i>
+            </a>
+          </li>
+          <li class="dropdown dropdown-list-toggle">
+            <a href="#" data-toggle="dropdown" class="nav-link notification-toggle nav-link-lg">
+              <i class="far fa-bell"></i>
+            </a>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
+              <img alt="image" src="assets/img/testimonials/testi1.jpg" class="rounded-circle mr-1">
+              <div class="d-sm-none d-lg-inline-block">Hi, Sumanto</div>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right">
+              <div class="dropdown-title">Logged in 5 min ago</div>
+              <a href="features-profile.html" class="dropdown-item has-icon">
+                <i class="far fa-user"></i> Profil Saya
+              </a>
+              <a href="features-activities.html" class="dropdown-item has-icon">
+                <i class="fas fa-bolt"></i> Poin Aktivitas
+              </a>
+              <a href="features-settings.html" class="dropdown-item has-icon">
+                <i class="fas fa-cog"></i> Pengaturan
+              </a>
+              <div class="dropdown-divider"></div>
+              <a href="login.html" class="dropdown-item has-icon text-danger">
+                <i class="fas fa-sign-out-alt"></i> Logout
+              </a>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <div class="main-sidebar sidebar-style-2">
+        <aside id="sidebar-wrapper">
+          <div class="sidebar-brand">
+            <a href="index.html"><img src="assets-cd/img/icon-bisait.png" width="25px"> BIT BELAJAR</a>
+          </div>
+          <div class="sidebar-brand sidebar-brand-sm">
+            <a href="index.html">CDO</a>
+          </div>
+          <ul class="sidebar-menu">
+            <li>
+              <a href="dashboard-utama.html" class="nav-link"><i class="fas fa-home"></i><span>Beranda Utama</span></a>
+            </li>
+            <li class="menu-header">Menu</li>
+            <li>
+              <a href="" class="nav-link">
+                <i class="fas fa-university"></i>
+                <span>Akademi</span>
+              </a>
+            </li>
+            <li class="active">
+              <a class="nav-link" href="list-kelas.html">
+                <i class="fas fa-code"></i>
+                <span>List Kelas</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-route"></i>
+                <span>Peta Jalur Belajar</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-user-graduate"></i>
+                <span>Testimoni Member</span>
+              </a>
+            </li>
+            <li>
+              <a class="nav-link" href="#">
+                <i class="fas fa-dollar-sign"></i>
+                <span>Penawaran Harga</span>
+              </a>
+            </li>
+            <li class="menu-header">Portal Menu</li>
+            <li class="dropdown">
+              <a href="#" class="nav-link has-dropdown"><i class="fas fa-rocket"></i> <span>Beranda Pembelajaran</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="nav-link" href="">Progress</a></li>
+                <li><a class="nav-link" href="">Kelas</a></li>
+                <li><a class="nav-link" href="">Project</a></li>
+                <li><a class="nav-link" href="">Ujian dan Tugas Praktik</a></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
+            <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
+              <i class="fas fa-fire"></i> Mulai Belajar !
+            </a>
+          </div>
+        </aside>
+      </div>
+
+      <div class="main-content">
+        <div class="section">
+          <div class="section-header">
+            <h1>Modul Web Dasar</h1>
+            <div class="section-header-breadcrumb">
+              <div class="breadcrumb-item active"><a href="#">List Kelas</a></div>
+              <div class="breadcrumb-item"><a href="#">Kelas Pemrograman Web</a></div>
+              <div class="breadcrumb-item"><a href="#">Modul Web Dasar</a></div>
+            </div>
+          </div>
+          <div class="section-body">
+            <div class="mb-4">
+                      <div class="hero bg-primary text-white">
+                        <div class="hero-inner">
+                          <h2>Pilihan yang bagus Sumanto !</h2>
+                            <p class="lead">Pilihan yang sangat tepat untuk memulai perjalanmu belajar dunia pemrograman web mulai dari dasarnya , ayo kita jelajahi sekarang juga</p>
+                          </div>
+                      </div>
+                  </div>
+                  <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item">
+                  <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Overview Modul</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Materi</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Project Akhir</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" id="about-tab" data-toggle="tab" href="#about" role="tab" aria-controls="about" aria-selected="false">Konsultasi ke Tentor</a>
+              </li>
+            </ul>
+            <div class="row" align="justify">
+              <div class="tab-content col-md-8" id="myTabContent">
+                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"><br>
+                    <h4>Programmer yang hebat selalu dimulai dari awal, tidak ada yang instan dan kamu pun bisa !</h4><br>
+                    <img src="assets-cd/img/news/web-dasar/sampul-web-dasar.png" class="img-fluid"><br><br>
+                    <p>
+                      Seiring dengan perkembangan internet khususnya di Indonesia membuat kepopuleran website dikalangan masyarakat semakin meningkat. Hampir setiap orang pasti pernah mengunjungi website yang ada diinternet. Disisi lain mengenal website untuk kehidupan sehari-hari juga bermanfaat dalam menunjang berbagai aktifitas kita.
+
+                      Website umumnya sebagai sarana guna mendapatkan informasi apasaja yang kita butuhkan, bahkan dewasa ini website juga sudah bisa sebagai media untuk kita bisa berbisnis dan menghasilkan pundi-pundi uang. Diantara website yang populer di Indonesia yaitu seperti Google, Twitter,Kompas,Facebook,Bukalapak,Tokopedia,CNN, dan masih banyak lainnya.
+
+                      Meskipun tanpa disadari kita sudah berinteraksi dengan website di setiap harinya namun pasti masih banyak yang belum mengenal website untuk kehidupan sehari-hari. Melalui artikel kali ini kita akan membahas tentang pengertian website serta apa saja fungsinya dalam kehidupan kita sehari-hari.
+                    </p>
+                    <h4>Kenapa saya harus mempelajari modul ini ?</h4>
+                    <ul>
+                      <li>
+                        Web merupakan platform yang dapat diakses melalui banyak macam devices. Hal ini menjadi keuntungan jika Anda mengembangkan aplikasi berbasis Web.
+                      </li>
+                      <li>
+                        Siapapun Anda, jika ingin menjadi Web Developer harus memiliki pengetahuan dasar HTML, CSS, dan JavaScript yang kuat sebelum melangkah ke tahap selanjutnya.
+                      </li>
+                      <li>
+                        Pengembangan Web tidak membutuhkan komputer/laptop yang memiliki spesifikasi tinggi, sehingga tidak menjadi kendala bagi Anda yang tidak memiliki perangkat yang memumpuni.
+                      </li>
+                      <li>
+                        Menjadi platform yang dijangkau oleh Search Engine seperti Google, sehingga website cocok sebagai media promosi bisnis.
+                      </li>
+                      <li>
+                        Mengembangkan website termasuk pengembangan yang mudah di-maintenance dan mudah untuk dipublikasi.
+                      </li>
+                      <li>
+                        Sebagai prasyarat untuk menuju kelas selanjutnya seperti Belajar Fundamental Front-End Web Development atau Belajar Membangun LINE Front-end Framework.
+                      </li>
+                    </ul>
+                    <h4>Pre Requisit awal sebelum mempelajari modul ini</h4>
+                    <ul>
+                      <li>
+                        Mampu mengoperasikan komputer dengan baik.
+                      </li>
+                      <li>
+                        Kelas ini didesain untuk pemula, sehingga tidak ada prasyarat dalam pemahaman pemrograman sebelumnya.
+                      </li>
+                      <li>
+                        Anda harus mandiri, berkomitmen, benar-benar punya rasa ingin tahu dan tertarik pada subjek.
+                      </li>
+                      <li>
+                        Anda harus gigih, temukan topik yang menarik, bermain-main dan mengotak-atik ilmu yang Anda dapatkan. 
+                      </li>
+                      <li>
+                        Sebaik apa pun materi struktur kelas ini, tak akan berguna tanpa keseriusan Anda untuk belajar, berlatih, dan mencoba.
+                      </li>
+                    </ul>
+                    <h4>Spesification Minimum Device (Laptop/Computer)</h4>
+                    <ul>
+                      <li>
+                        Resolusi layar 1366 x 768 (Rekomendasi Full HD 1920 x 1080).
+                      </li>
+                      <li>
+                        Prosesor Intel Celeron (Rekomendasi Core i3 ke atas).
+                      </li>
+                      <li>
+                        RAM Minimum : 2 GB (Rekomendasi 4 GB atau lebih)
+                      </li>
+                      <li>
+                        Sistem Operasi Windows, Linux, MacOS
+                      </li>
+                    </ul>
+                    <H4>Tools / Software Yang Digunakan</H4>
+                    <ul>
+                      <li>
+                        Teks Editor bebas (Sublime, VSCode, Atom dll)
+                      </li>
+                      <li>
+                        Web Browser bebas (Chrome, Mozilla Firefox, Opera Mini)
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <div class="section-header">
+                      <h4>Materi Modul Web Dasar (15 Level)</h4>
+                      <div class="section-header-breadcrumb"></div>
+                    </div>
+                      <div class="card card-body bg-primary">
+                        <div class="media">
+                      <img class="mr-3" src="assets-cd/img/avatar/team/reza-team.png" alt="Generic placeholder image" width="50px">
+                      <div class="media-body">
+                        <h5 class="mt-0 text-white">Reza Febriansyah</h5>
+                        <p class="text-white">
+                          Hallo teman teman semuanya, disini saya yang akan menjadi tentor kalian dalam modul Web Dasar, tetap ikuti terus materinya dan jangan bosan bosan yaa hehehe
+                        </p>
+                      </div>
+                    </div><br>
+                  </div>
+                    <div class="list-group">
+                    <h6 class="list-group-item list-group-item-action active">
+                      List Materi yang dipelajari
+                    </h6>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 1.</span>
+                        </div>
+                        <div>Mengenal apa itu Website, jenis jenisnya, dan berbagai fungsinya</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 2.</span>
+                        </div>
+                        <div>Memahami konsep dan perbedaan Client dengan Server</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 3.</span>
+                        </div>
+                        <div>Mengenal Bahasa Markup HTML</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 4.</span>
+                        </div>
+                        <div>Struktur dari bahasa HTML</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 5.</span>
+                        </div>
+                        <div>Atribut</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 6.</span>
+                        </div>
+                        <div>Heading dan Paragraf</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-book"></i>
+                          <span> Praktik Project 1.</span>
+                        </div>
+                        <div>Membuat judul dan paragraf sederhana</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 7.</span>
+                        </div>
+                        <div>Struktur List</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 8.</span>
+                        </div>
+                        <div>Gambar</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-star"></i>
+                          <span> Level 9.</span>
+                        </div>
+                        <div>Header, Main, Footer</div>
+                      </div>
+                    </div>
+                    <div class="list-group-item list-group-item-action font-weight-bold">
+                      <div class="row">
+                        <div class="col-4">
+                          <i class="fas fa-book"></i>
+                          <span> Praktik Project 2.</span>
+                        </div>
+                        <div>Membuat struktur Website</div>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                  </div>
+                  <div class="tab-pane fade" id="about" role="tabpanel" aria-labelledby="about-tab">
+                    <h1>Konsultasi</h1>
+                  </div>
+              </div>
+              <div class="col-md-4">
+                <article class="article">
+                  <div class="article-header">
+                    <div class="article-image" data-background="assets-cd/img/news/web-dasar.png"></div>
+                      <div class="article-title">
+                        <h2>
+                          <a href="#">1. Belajar Dasar HTML</a>
+                        </h2>
+                      </div>
+                  </div>
+                  <div class="article-details">
+                    <b>
+                      Daftar dan pelajari modul ini sekarang juga
+                    </b><br><br>
+                    <div class="article-cta">
+                      <a href="" class="btn btn-primary">Coba Gratis</a>
+                      <button type="button" class="btn btn-success ml-3" data-toggle="modal" data-target="#exampleModal">
+                        Pelajari
+                      </button>
+                    </div>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Verifikasi Token</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label>Kode Token</label>
+                  <input type="input" class="form-control">
+                  <small class="form-text text-muted">Masukan kode token untuk lanjut ke pembelajaran</small>
+                </div>
+                <a href="belajar-web-dasar.html" class="btn btn-primary">Kirim</a>
+                <!-- <button type="submit" class="btn btn-primary">Kirim</button> -->
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- akhir modal -->
+
+      <footer class="main-footer">
+        <div class="footer-left">
+          Copyright &copy; BIT BELAJAR 2020 <div class="bullet"></div> Support By <a href="https://nauval.in/">BIT BELAJAR Team</a>
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  <!-- General JS Scripts -->
+  <script src="assets-cd/modules/jquery.min.js"></script>
+  <script src="assets-cd/modules/popper.js"></script>
+  <script src="assets-cd/modules/tooltip.js"></script>
+  <script src="assets-cd/modules/bootstrap/js/bootstrap.min.js"></script>
+  <script src="assets-cd/modules/nicescroll/jquery.nicescroll.min.js"></script>
+  <script src="assets-cd/modules/moment.min.js"></script>
+  <script src="assets-cd/js/stisla.js"></script>
+  
+  <!-- JS Libraies -->
+  <script src="assets-cd/modules/jquery.sparkline.min.js"></script>
+  <script src="assets-cd/modules/chart.min.js"></script>
+  <script src="assets-cd/modules/owlcarousel2/dist/owl.carousel.min.js"></script>
+  <script src="assets-cd/modules/summernote/summernote-bs4.js"></script>
+  <script src="assets-cd/modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
+
+  <!-- Page Specific JS File -->
+  <script src="assets-cd/js/page/index.js"></script>
+  
+  <!-- Template JS File -->
+  <script src="assets-cd/js/scripts.js"></script>
+  <script src="assets-cd/js/custom.js"></script>
+</body>
+</html>
